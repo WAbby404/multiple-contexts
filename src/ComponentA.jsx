@@ -13,7 +13,7 @@ function ComponentA(props) {
       <h1>ComponentA</h1>
       <h1>{`Hi ${user}`}</h1>
       <h1>{`The Theme is ${theme}`}</h1>
-      <ThemeContext.Provider value={theme}>
+      <ThemeContext.Provider value={{ theme, setTheme }}>
         <UserContext.Provider value={user}>
           <ComponentB />
         </UserContext.Provider>
